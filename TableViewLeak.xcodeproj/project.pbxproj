@@ -311,6 +311,7 @@
 				662FEE411C0F900C00C670BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

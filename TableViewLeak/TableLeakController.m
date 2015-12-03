@@ -65,10 +65,12 @@
 		[self.dataArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 		
-		if ([self.delegate respondsToSelector:@selector(tableLeakControllerDeletedCell:)]) {
-			[self.delegate tableLeakControllerDeletedCell:deletedCell];
-		}
-		
+		NSLog(@"-");
+		NSLog(@"TableLeakController deleted cell with pointer address: %lu (%@)",(uintptr_t)self, [deletedCell.textLabel.text copy]);
+		NSLog(@"Now go back, pause execution, and type 'po %lu' into the debugger",(uintptr_t)deletedCell);
+		NSLog(@"All the other cells with have dealloc'ed. Why hasn't the deleted one...?");
+		NSLog(@"-");
+
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
 		
     }

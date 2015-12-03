@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TableLeakController.h"
 
 
-@interface MainViewController : UIViewController <TableLeakControllerDelegate> {
+@interface MainViewController : UIViewController {
 	
 }
 

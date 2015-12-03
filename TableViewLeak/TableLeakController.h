@@ -8,20 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol TableLeakControllerDelegate;
-
 
 @interface TableLeakController : UITableViewController {
 	
 }
-
-@property (nonatomic, weak) id<TableLeakControllerDelegate> delegate;
-
 @end
 
-
-
-@protocol TableLeakControllerDelegate <NSObject>
-@optional
--(void)tableLeakControllerDeletedCell:(UITableViewCell *)cell;
-@end
