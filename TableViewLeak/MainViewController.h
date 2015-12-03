@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  TableViewLeak
 //
 //  Created by Paul Derbyshire on 02/12/2015.
@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableLeakController.h"
 
-@interface ViewController : UIViewController
 
+@interface MainViewController : UIViewController <TableLeakControllerDelegate> {
+	
+}
 
 @end
-
