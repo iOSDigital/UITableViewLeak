@@ -11,8 +11,7 @@
 
 
 @interface TableLeakController ()
-@property (nonatomic, strong)	NSMutableArray *dataArray;
-@property (nonatomic, copy)		NSString *deletedPointerString;
+@property (nonatomic, strong) NSMutableArray *dataArray;
 @end
 
 
